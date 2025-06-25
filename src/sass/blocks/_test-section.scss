@@ -1,0 +1,13 @@
+.test-section {
+    padding-top: 84px;
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        width: 385px;
+        padding: 20px;
+        background-color: #bdb7b7;
+    }
+
+    
+}
