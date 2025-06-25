@@ -37,7 +37,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var loda
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   getFirstModule: () => (/* binding */ getFirstModule)\n/* harmony export */ });\nfunction getFirstModule() {\r\n    window.addEventListener(\"DOMContentLoaded\", function () {\r\n        \r\n        console.log(\"Hellow world\");\r\n    });\r\n}\r\n\r\n\n\n//# sourceURL=webpack://template_gulp_webp/./src/js/module1.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   getFirstModule: () => (/* binding */ getFirstModule)\n/* harmony export */ });\nfunction getFirstModule() {\r\n    window.addEventListener(\"DOMContentLoaded\", function () {\r\n        \r\n        console.log(\"Hellow world from desktop\");\r\n    });\r\n}\r\n\r\n\n\n//# sourceURL=webpack://template_gulp_webp/./src/js/module1.js?");
 
 /***/ }),
 
@@ -48,7 +48,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   getSecondModule: () => (/* binding */ getSecondModule)\n/* harmony export */ });\nfunction getSecondModule() {\r\n    window.addEventListener(\"DOMContentLoaded\", function () {\r\n        \r\n        console.log(\"Hellow world\");\r\n    });\r\n}\r\n\r\n\n\n//# sourceURL=webpack://template_gulp_webp/./src/js/module2.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   getSecondModule: () => (/* binding */ getSecondModule)\n/* harmony export */ });\nfunction getSecondModule() {\r\n    window.addEventListener(\"DOMContentLoaded\", function () {\r\n        \r\n        console.log(\"Hellow world from notebook\");\r\n    });\r\n}\r\n\r\n\n\n//# sourceURL=webpack://template_gulp_webp/./src/js/module2.js?");
 
 /***/ }),
 
