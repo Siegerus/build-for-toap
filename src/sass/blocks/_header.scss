@@ -255,7 +255,8 @@ h1 {
 }
 
 .header__cont-nav ul li.active {
-	background-color: #f5f5f5;
+	background-color: var(--tertiary-color);
+	/* background-color: #f5f5f5; */
 }
 
 .header__cont-num {
@@ -397,7 +398,7 @@ h1 {
 	border-radius: 8px;
 	overflow: hidden;
 	/* background-color: #f5f5f5; */
-	background-color: rgba(185, 99, 239, 0.3);
+	background-color: var(--primary-color-transparent);
 	padding: 10px;
 	transition: background-color 0.4s;
 	display: flex;
@@ -407,8 +408,7 @@ h1 {
 
 .assoc-plan__blockA p,
 .assoc-plan__blockB p {
-	font-size: 20px;
-	font-weight: 500;
+	font-size: 21px;
 }
 
 .blockB .assoc-plan__blockB {
@@ -418,7 +418,7 @@ h1 {
 .assoc-plan__blockA:hover,
 .assoc-plan__blockB:hover {
 	background-color: var(--primary-color);
-	// background-color: rgba(185, 99, 239, 1);
+	/* background-color: rgba(185, 99, 239, 1); */
 	color: #fff;
 }
 
@@ -699,13 +699,30 @@ h1+.mc__about-project_cont {
 }
 
 .mc-t-p__cont-card li {
+	position: relative;
 	line-height: 1.2;
-	margin-bottom: 8px;
+	margin-bottom: 15px;
+}
+
+.mc-t-p__cont-card li::before {
+	content: "";
+	position: absolute;
+	top: 4px;
+	left: -30px;
+    width: 19px;
+    height: 19px;
+	background: url("https://toapinfo.ru/uploads/icons/icon-circle-9612489-from-edt.im.png") center/cover no-repeat;
+}
+
+.mc-t-p__cont-card ul {
+	padding-left: 14px;
+	list-style-type: none;
 }
 
 .mc-t-p__cont-card h3 {
 	padding-top: 10px;
-	font-size: 20px;
+	padding-left: 14px;
+	font-size: 21px;
 	margin-bottom: 13px;
 	font-weight: 600;
 	font-family: 'SF Display' !important;
@@ -716,7 +733,8 @@ h1+.mc__about-project_cont {
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: space-between;
-	background-color: #f5f5f5;
+	background-color: var(--secondary-color-transparent);
+	/* background-color: var(--primary-color-transparent); */
 	border-radius: var(--border-radius);
 	position: relative;
 	overflow: hidden;
@@ -725,7 +743,7 @@ h1+.mc__about-project_cont {
 }
 
 .mc-w-s-cont__card:hover {
-	background-color: var(--primary-color);
+	background-color: var(--secondary-color);
 	color: #fff;
 }
 
@@ -818,17 +836,18 @@ h1+.mc__about-project_cont {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	background-color: #f5f5f5;
+	/* background-color: #f5f5f5; */
+	background-color: var(--primary-color-transparent);
 	border-radius: var(--border-radius);
 	overflow: hidden;
 	padding: 24px;
 	transition: background-color 0.3s;
 }
 
-.mc-t-p__cont-card:hover {
+/* .mc-t-p__cont-card:hover {
 	background-color: var(--primary-color);
 	color: #fff;
-}
+} */
 
 .mc-t-p__cont-card p {
 	flex-grow: 1;
@@ -865,7 +884,8 @@ h1+.mc__about-project_cont {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color: #f5f5f5;
+	/* background-color: #f5f5f5; */
+	background-color: var(--tertiary-color);
 	border-radius: var(--border-radius);
 	overflow: hidden;
 	padding: 20px;
@@ -934,6 +954,11 @@ h1+.mc__about-project_cont {
 
 #rules.activity .cards__card {
 	min-height: 240px;
+	background-color: var(--secondary-color-transparent);
+}
+
+#rules.activity .cards__card p {
+	font-size: 18px;
 }
 
 .activity .cards {
@@ -941,12 +966,11 @@ h1+.mc__about-project_cont {
 }
 
 .activity .cards__card {
-	background: #f5f5f5;
-	/*    color: #757575;*/
+	/* background: #f5f5f5; */
+	background-color: var(--secondary-color-transparent);
 	line-height: 1.2;
 	align-items: center;
 	justify-content: flex-start;
-	padding-top: 44px;
 }
 
 .activity-gain b {
@@ -981,24 +1005,11 @@ h1+.mc__about-project_cont {
 	font-size: 16px;
 	font-weight: 400;
 	color: inherit;
-	;
 	text-align: left;
 }
 
 .mc__Latest-announc .cards {
 	padding-top: 44px;
-}
-
-@media (max-width: 900px) {
-	.cards {
-		grid-template-columns: repeat(2, 1fr);
-	}
-}
-
-@media (max-width: 550px) {
-	.cards {
-		grid-template-columns: repeat(1, 1fr);
-	}
 }
 
 #rules {
@@ -1020,13 +1031,12 @@ h1+.mc__about-project_cont {
 	padding: 24px;
 	gap: 20px;
 	border-radius: var(--border-radius);
-	background-color: #000;
 }
 
-.cards__card:hover {
+/* .cards__card:hover {
 	background-color: var(--primary-color);
 	color: #fff;
-}
+} */
 
 .cards__card img {
 	position: absolute;
@@ -1050,6 +1060,18 @@ h1+.mc__about-project_cont {
 	z-index: 1;
 	font-size: 16px;
 	color: #fff;
+}
+
+@media (max-width: 900px) {
+	.cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 550px) {
+	.cards {
+		grid-template-columns: repeat(1, 1fr);
+	}
 }
 
 /* section mc__Latest-announc end*/
@@ -1084,7 +1106,8 @@ h1+.mc__about-project_cont {
 }
 
 .mc-n-c__card {
-	background-color: #f5f5f5;
+	/* background-color: #f5f5f5; */
+	background-color: var(--tertiary-color);
 	padding: 20px;
 	border-radius: var(--border-radius);
 	min-height: 190px;
@@ -1138,7 +1161,8 @@ h1+.mc__about-project_cont {
 	position: relative;
 	border-radius: 8px;
 	/* overflow: hidden; */
-	background-color: #f5f5f5;
+	background-color: var(--tertiary-color);
+	/* background-color: #f5f5f5; */
 	padding: 24px 0 0 24px;
 }
 
@@ -1275,7 +1299,8 @@ h1+.mc__about-project_cont {
 	border-radius: 8px;
 	margin-right: 20px;
 	padding: 0 20px 20px;
-	background-color: #f5f5f5;
+	background-color: var(--tertiary-color);
+	/* background-color: #f5f5f5; */
 }
 
 .fs1 h1 {
@@ -1372,8 +1397,9 @@ h1+.mc__about-project_cont {
 }
 
 .mc-t-p__cont-card span {
+	align-self: flex-end;
 	color: #797979;
-	font-size: 13px;
+	font-size: 24px;
 }
 
 a.main-btn,
@@ -1578,11 +1604,14 @@ a.main-btn,
 	border-radius: 8px;
 
 	padding: 20px !important;
-	background-color: #f5f5f5;
+	background-color: var(--tertiary-color);
+	/* background-color: #f5f5f5; */
 }
 
 .cards+p {
 	margin-top: 24px;
+	text-align: center;
+	background-color: var(--secondary-color-transparent);
 }
 
 .sect-title+.text-with-bg {
@@ -1702,10 +1731,13 @@ a.main-btn,
 
 :root {
     --main-bc-collor: #fff;
-    // --primary-color: #b963ef;
 	--primary-color: rgba(185, 99, 239, 1);
+	--primary-color-transparent: rgba(185, 99, 239, 0.2);
     --primary-colorBG: #4a00789c;
     --primary-color-activ: #9e46d4;
+	--secondary-color: rgba(30, 80, 30, 0.5);
+	--secondary-color-transparent: rgb(156, 189, 156, 0.3);
+	--tertiary-color: #eceaea;
     --main-font-text: "SF Display", sans-serif;
     --main-font-title: "SF Display", sans-serif;
     --block-indent: 64px;
