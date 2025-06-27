@@ -417,8 +417,8 @@ h1 {
 
 .assoc-plan__blockA:hover,
 .assoc-plan__blockB:hover {
-	/* background-color: var(--primary-color); */
-	background-color: rgba(185, 99, 239, 1);
+	background-color: var(--primary-color);
+	// background-color: rgba(185, 99, 239, 1);
 	color: #fff;
 }
 
@@ -1702,7 +1702,8 @@ a.main-btn,
 
 :root {
     --main-bc-collor: #fff;
-    --primary-color: #b963ef;
+    // --primary-color: #b963ef;
+	--primary-color: rgba(185, 99, 239, 1);
     --primary-colorBG: #4a00789c;
     --primary-color-activ: #9e46d4;
     --main-font-text: "SF Display", sans-serif;
