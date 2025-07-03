@@ -215,7 +215,7 @@ h1 {
 }
 
 .header__cont-logo a img {
-	height: 94px;
+	height: 81px;
 }
 
 /* Стили для кнопки бургер-меню */
@@ -1165,10 +1165,6 @@ h1+.mc__about-project_cont {
 @media (max-width: 900px) {
 	.mc__news-cont {
 		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.mc-n-c__card  {
-		font-size: 21px;
 	}
 }
 
